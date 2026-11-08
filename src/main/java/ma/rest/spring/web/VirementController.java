@@ -27,7 +27,7 @@ import java.util.List;
  * repondent a ce besoin sans modifier le controleur demande par le TP.
  */
 @RestController
-@RequestMapping("/banque")
+@RequestMapping({"/banque", "/api"})
 @Tag(name = "Portefeuille", description = "Filtres et virements entre comptes")
 public class VirementController {
 
