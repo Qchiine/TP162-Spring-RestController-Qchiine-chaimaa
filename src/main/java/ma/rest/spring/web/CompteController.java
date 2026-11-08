@@ -32,7 +32,9 @@ import java.util.List;
  * <p>
  * Le prefixe {@code /api} est un alias de {@code /banque} : l'application React
  * du TP 9 appelle {@code http://localhost:8082/api/comptes}, alors que l'enonce
- * du TP 8 utilise {@code /banque}. Les deux chemins restent disponibles.
+ * du TP 8 utilise {@code /banque}. Les deux chemins restent disponibles ;
+ * {@code springdoc.paths-to-match} restreint la documentation a {@code /banque}
+ * pour eviter d'y afficher chaque endpoint deux fois.
  */
 @RestController
 @RequestMapping({"/banque", "/api"})
